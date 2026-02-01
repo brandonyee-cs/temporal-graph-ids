@@ -1,0 +1,47 @@
+# Default configuration for T-GAT model
+
+# Data preprocessing
+data:
+  window_size: 3600  # 1 hour in seconds
+  overlap: 1800      # 30 minutes overlap
+  node_feature_dim: 64
+  edge_feature_dim: 32
+
+# Graph Attention Encoder
+encoder:
+  hidden_channels: 128
+  out_channels: 64
+  num_layers: 2
+  heads: 4
+  dropout: 0.1
+
+# Temporal Aggregator
+temporal:
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.1
+
+# Bayesian Uncertainty
+uncertainty:
+  num_samples: 50
+  dropout_rate: 0.2
+
+# Physics Constraints
+physics:
+  min_auth_delta: 0.1
+  energy_weight: 0.1
+  constraint_weight: 0.01
+
+# Training
+training:
+  optimizer: adam
+  learning_rate: 0.0001
+  grad_clip: 1.0
+  early_stopping_patience: 10
+  batch_size: 32
+  max_epochs: 100
+
+# Inference
+inference:
+  threshold: 0.5
+  device: auto  # auto, cpu, or cuda
