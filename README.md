@@ -1,11 +1,4 @@
 Code Associated With: 
-
-## T-GAT: Trustworthy Lateral Movement Detection via Temporal Graph Attention with Uncertainty Quantification
-
-### Brandon Yee <sup>1</sup>
-
-<sup>1</sup> Yee Collins Research Group, b.yee@ycrg-labs.org
-
 ---
 
 ### Installation
