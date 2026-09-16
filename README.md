@@ -1,5 +1,3 @@
-Code Associated With: 
----
 
 ### Installation
 
